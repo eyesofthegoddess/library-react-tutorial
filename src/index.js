@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faSHoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faShoppingCart, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBars, faSHoppingCart)
+library.add(faBars, faShoppingCart, faTimes)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
